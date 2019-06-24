@@ -40,13 +40,8 @@ public class SociosManager {
                 //Get all tokens available in line
                 String[] datosSocio = line.split(DELIMITER);
                 Socio unSocio = new Socio(datosSocio[0], datosSocio[1], datosSocio[2], datosSocio[3], datosSocio[4]);
-                socios.add(unSocio);
-//                for(String token : datosSocio)
-//                {
-//                    //Print all tokens
-//                    System.out.println(token);
-//                }                
-                System.out.println(unSocio.toString());
+                socios.add(unSocio);            
+//                System.out.println(unSocio.toString());
                 line = fileReader.readLine();
             }            
         }
